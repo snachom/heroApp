@@ -1,0 +1,13 @@
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-wrapper-inner {
+  border: 1px solid black;
+  padding: 2em 8em;
+  display: flex;
+  flex-flow: column;
+}

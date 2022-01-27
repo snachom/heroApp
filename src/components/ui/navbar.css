@@ -2,3 +2,43 @@ nav {
   padding: 0 20px;
   margin-bottom: 20px;
 }
+
+.logout-wrapper {
+  gap: .5em;
+}
+
+.logout-wrapper button {
+  /* color: white !important; */
+  padding: 0 15px !important;
+}
+.logout-wrapper button:hover {
+  color: black !important;
+}
+
+
+/* OVERRIDING BOOTSTRAP */
+
+@media (max-width: 576px) {
+  .navbar-expand-sm {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .navbar-expand-sm .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+  }
+  .navbar-expand-sm .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .navbar-expand-sm .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+  .navbar-expand-sm .navbar-nav {
+    flex-direction: row;
+  }
+}

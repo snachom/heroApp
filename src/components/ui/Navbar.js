@@ -1,18 +1,18 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 import './navbar.css'
 
 export const Navbar = () => {
 
+  const navigate = useNavigate()
   const handleLogout = () => {
-    // TODO
-    console.log('logout')
+    navigate('/login', { replace: true } )
   }
 
 	return (
 
-		<nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+		<nav className="navbar navbar-expand-sm navbar-dark bg-black">
 
 			<Link
 				className="navbar-brand"
@@ -41,7 +41,7 @@ export const Navbar = () => {
 			</div>
 
 			<div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
-				<ul className="navbar-nav ml-auto">
+				<ul className="navbar-nav ml-auto logout-wrapper">
 					<span className="nav-item nav-link text-warning "> Nacho </span>
 					<button
 						className="nav-item nav-link btn btn-outline-warning"

@@ -1,3 +1,7 @@
+.filtered-cards .card-cols {
+  margin-bottom: .5em;
+}
+
 @media (min-width: 600px) {
   .filtered-cards {
     display: grid;
@@ -6,6 +10,7 @@
     gap: 0.5em;
   }
   .filtered-cards .card-cols {
+    margin-bottom: 0;
     width: 100%;
   }
 

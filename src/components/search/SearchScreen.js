@@ -1,9 +1,23 @@
 import React from 'react';
+import { useForm } from '../../hooks/useForm';
+import { getHeroesByName } from '../../helpers/getHeroesByName';
+import { HeroCard } from '../hero/HeroCard';
+import './search-results.css';
 
 export const SearchScreen = () => {
 
-  const handleSearch = () => {
-    
+  const [ {searchText}, handleInputChange, reset] = useForm({
+    searchText: ''
+  })
+  const filteredHeroes = getHeroesByName('')
+
+  const handleSearch = (e) => {
+    e.preventDefault()
+
+    if( searchText.trim().length <= 1) {
+      return;
+    }
+    console.log(searchText)
   }
 
   return (
@@ -16,14 +30,15 @@ export const SearchScreen = () => {
           <h4>Search</h4>
           <hr/>
 
-          <form>
+          <form onSubmit={handleSearch}>
             <input 
               type="text" 
               className="form-control" 
               placeholder="Search a hero"
               autoComplete="off"
               name="searchText"
-              // value={searchText}
+              value={searchText}
+              onChange={handleInputChange}
             />
             <button
               type="submit"
@@ -32,6 +47,20 @@ export const SearchScreen = () => {
               Search
             </button>
           </form>
+        </div>
+        <div className="col-7 result-cards">
+          <h4>Results</h4>
+          <hr/>
+          <div className="filtered-cards">
+            {
+              filteredHeroes.map( hero => (
+                <HeroCard 
+                  key={hero.id}
+                  {...hero}
+                />
+              ))
+            }
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,12 @@
+@media (min-width: 600px) {
+  .filtered-cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    gap: 0.5em;
+  }
+  .filtered-cards .card-cols {
+    width: 100%;
+  }
+
+}

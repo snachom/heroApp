@@ -6,13 +6,18 @@ nav {
   z-index: 1;
 }
 
+.menu-items {
+  padding-top: 5px;
+}
+
 .logout-wrapper {
   gap: .5em;
+  padding-top: 7px;
 }
 
 .logout-wrapper button {
   /* color: white !important; */
-  padding: 0 15px !important;
+  padding: 1px 15px !important;
 }
 .logout-wrapper button:hover {
   color: black !important;

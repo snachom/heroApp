@@ -18,11 +18,11 @@ export const Navbar = () => {
 				className="navbar-brand"
 				to="/"
 			>
-				Asociaciones
+				Home
 			</Link>
 
 			<div className="navbar-collapse">
-				<div className="navbar-nav">
+				<div className="navbar-nav menu-items">
 
 					<NavLink
 						className={ ( {isActive} ) => { return "nav-item nav-link + (isActive ? 'active' : '')"} }
@@ -36,6 +36,12 @@ export const Navbar = () => {
 						to="/dc"
 					>
 						DC
+					</NavLink>
+					<NavLink
+						className={ ( {isActive} ) => { return "nav-item nav-link + (isActive ? 'active' : '')"} }
+						to="/search"
+					>
+						Search
 					</NavLink>
 				</div>
 			</div>

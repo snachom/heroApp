@@ -2,6 +2,13 @@
   overflow: hidden;
 }
 
+.card-info {
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
 .card-head-wrapper {
   padding: 0;
 }

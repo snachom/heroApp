@@ -13,3 +13,13 @@ span {
   line-height: 9px;
   vertical-align: 50%;
 }
+
+.container-screens {
+  padding-top: 70px;
+}
+
+@media (min-width: 600px) {
+  .container-screens {
+    padding-top: 90px;
+  }
+}

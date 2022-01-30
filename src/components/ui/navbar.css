@@ -18,25 +18,22 @@
   .nav-submenu:last-child {
     margin-bottom: 10px;
   }
-  [aria-current]:not([aria-current="false"]) {
-    font-weight: bold;
-    color: orange !important;
-  }
+}
+[aria-current]:not([aria-current="false"]) {
+  /* font-weight: bold; */
+  color: orange !important;
 }
 
 .logout-wrapper {
   align-items: center;
   justify-content: flex-end;
   gap: 1em;
-  padding-top: 7px;
   width: 100%;
   flex-direction: row;
 }
 
-
 .logout-wrapper button {
   padding: 7px 15px !important;
-  margin-bottom: 5px;
 }
 .logout-wrapper button:hover {
   color: black !important;

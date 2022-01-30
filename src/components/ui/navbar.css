@@ -38,3 +38,11 @@
 .logout-wrapper button:hover {
   color: black !important;
 }
+
+.navbar-toggler {
+  border-color: white !important;
+  fill: white !important;
+}
+.navbar-toggler-icon {
+  background-image: none !important;
+}

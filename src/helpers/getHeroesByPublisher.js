@@ -3,10 +3,10 @@ import { heroes } from "../data/heroes"
 export const getHeroesByPublisher = ( publisher ) => {
 
   const validPublisher = ['DC Comics', 'Marvel Comics']
-  if ( !validPublisher.includes( publisher) ) {
-    throw new Error(`${ publisher } is not a valid publisher`)
-  } else {
-    return heroes.filter( hero => hero.publisher === publisher )
-  }
+    if ( !validPublisher.includes( publisher) ) {
+      throw new Error(`${ publisher } is not a valid publisher`)
+    } else {
+      return heroes.filter( hero => hero.publisher === publisher )
+    }
 
 }

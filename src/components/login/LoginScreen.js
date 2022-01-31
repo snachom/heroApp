@@ -17,7 +17,9 @@ export const LoginScreen = () => {
       payload: { name: 'Nacho' }
     })
     
-    navigate('/', { replace: true })
+    const lastPath = localStorage.getItem('lastPath') || '/';
+
+    navigate( lastPath, { replace: true })
 
   }
   
